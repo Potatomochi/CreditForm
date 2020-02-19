@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="resources\style.css" type="text/css" rel="stylesheet"></link>  
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet"> 
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+
+    </script>
+    <script src="resources\app.js" type="module"></script>
+    <title>Credit Card Form</title>
+
+</head>
+<body>
+    
+    <noscript>if you're seeing this , it means you've disabled certain elements that prevent this browser from working. For starters, make sure javascript works on your device before continuing </noscript>
+    <div class="wrapper">
+
+        <div class="main">
+
+            <div class="holder">
+              <div class="card-img">
+                <h1 class="cardtitle">Card Type</h1>
+                <div id="cardno"><input type="tel" id="cNumberfield2" autocomplete="off"   onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" maxlength="16" readonly/></div>
+                <div id="cardname">
+                    <p>Card Holder</p>
+                    <input type="text" id="cNamefield2" autocomplete="off" readonly/>
+
+                </div>
+              
+
+            
+     </div>
+     <div class="form">
+                <div class="formtitle">
+                    <p>Credit Card Form </p>
+                </div>
+                <label for="cNumber" id="cNumber">
+                    Card Number:<br />
+                    <input type="tel" id="cNumberfield" autocomplete="off" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" maxlength="19"/>
+                </label>
+                
+    <label for="cName" id="cName">
+      Cvv:<br />
+      <input type="text" id="cCVV" autocomplete="off"  onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" maxlength="4"/>
+  </label>
+                <label for="cName" id="cName">
+                    Card Name:<br />
+                    <input type="text" id="cNamefield" autocomplete="off" />
+                </label>
+
+    <div id='app'>
+      Expiry Date:<br />
+      <v-date-picker :mode='mode' v-model='selectedDate' class="datepicker"/>
+    </div>
+
+
+    <script src='https://unpkg.com/vue@2.6.11/dist/vue.js'></script>
+    <script src='https://unpkg.com/v-calendar@1.0.0-beta.23/lib/v-calendar.umd.min.js'></script>
+
+
+
+                <input type="submit" value="Submit" id="submit" />
+            </div>
+
+</div>
+
+                
+           
+
+
+
+
+
+    </div>
+    <script>
+        new Vue({
+          el: '#app',
+          data: {
+            mode: 'single',
+            selectedDate: null,
+            
+          }
+        })
+      </script>
+</body>
+</html>

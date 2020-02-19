@@ -1,0 +1,183 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+  } 
+
+
+.body{
+    user-select: none;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+
+}
+
+.main{
+    padding: 50px;
+    width: 100%;
+    height:100vh;
+    background-color:#f5efae;
+
+}
+.holder{
+    background-color: #f4f8f8;
+    border-radius: 13px;
+    border: 5px solid #f4f8f8;
+    box-shadow: 3px 10px 20px 0px rgba(35, 100, 210, 0.3);
+    width: 40%;
+    height: 90vh;
+    margin-left: 30%;
+    padding: 25% 0% 0% 5%;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    z-index: 1;
+}
+/* Form Styling */
+.form{
+    padding-top: 5%;
+    height: 40%;
+   
+    margin-right: 40%;
+
+}
+#cNumberfield{
+    font-size: 15px;
+    border-radius: 5px;
+    border:2px solid #bbbbbb;
+    width: 100%;
+
+    margin: 2% 0% 0% 0%;
+    padding: 2%;
+}
+#cNumberfield:focus{
+    border:2px solid #032d5f;
+    transition: 0.2s ease-in all;
+}
+#cNumberfield:hover{
+    border: 2px solid #032d5f;
+    transition: 0.2s ease-in all;
+    
+}
+#cNumber{
+    font-size: 15px;
+    margin:10% 0% 0% 0%;    
+}
+#cName{
+    font-size: 15px;
+    margin:10% 0% 0% 0%;
+}
+#cNamefield{
+    font-size: 15px;
+    margin: 2% 0% 5% 0%;
+    border-radius: 5px;
+    border:2px solid #bbbbbb;
+    width: 100%;
+    padding:2%;
+
+}
+#cNamefield:focus{
+    border:2px solid #032d5f;
+    transition: 0.2s ease-in all;
+    
+}
+#cNamefield:hover{
+    border: 2px solid #032d5f;
+    transition: 0.2s ease-in all;
+
+}
+#cCVV{
+    font-size: 15px;
+    margin: 2% 0% 0% 0%;
+    border-radius: 5px;
+    border:2px solid #bbbbbb;
+    width: 100%;
+    padding:2%;
+
+}
+#cCVV:focus{
+    border:2px solid #032d5f;
+    transition: 0.2s ease-in all;
+    
+}
+#cCVV:hover{
+    border: 2px solid #032d5f;
+    transition: 0.2s ease-in all;
+
+}
+
+#submit{
+    background-color: #2364d2;
+    color: #FFF;
+    margin-top: 10%;
+    width: 40%;
+    height: 50%;
+    border-radius: 5px;
+    border: 5px #2364d2;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#cardtitle{
+    font-family: 'Roboto', sans-serif;
+    padding: 5% 5% 0% 5%;
+    
+}
+.datepicker{
+    margin-bottom: 50%;
+}
+/* Credit Card Styling */
+.card-img{
+
+    z-index: 999;
+    background-color: #2364d2;
+    max-width: 560px;
+    min-height:340px;
+    border: 1px solid #032d5f;
+    border-radius: 15px;
+    margin-top: -80%;
+    
+    color: #f4f8f8;
+    box-shadow: 3px 10px 20px 0px rgba(35, 100, 210, 0.8);
+    padding: 10% 0% 0% 0%;
+   
+}
+.cardtitle{
+    padding-left: 30%;
+}
+#cardno{
+    padding: 10% 5% 5% 5%;
+    
+    font-family: 'Courier Prime', monospace;
+}
+#cardname{
+    padding: 0% 0% 10% 5%;
+    margin-bottom: 10%;
+    float: left;
+    font-family: 'Courier Prime', monospace;
+}
+#cNamefield2{
+    background: none;
+    border:none;
+    color: #f4f8f8;
+    font-size: 25px;
+    font-family: 'Courier Prime', monospace;
+    margin-top: 5%;
+}
+#cNumberfield2{
+    background:none;
+    border:none;
+    color: #f4f8f8;
+    font-size: 45px;
+    font-family: 'Courier Prime', monospace;
+}
+
+
+  
